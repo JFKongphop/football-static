@@ -7,9 +7,9 @@ import Products from "./pages/Products";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import SingleProduct from "./pages/SingleProduct";
-// import DashBoard from "./pages/DashBoard";
-// import Login from "./pages/Login";
-// import ProtectedRoute from "./pages/ProtectedRoute";
+import DashBoard from "./pages/DashBoard";
+import Login from "./pages/Login";
+import ProtectedRoute from "./pages/ProtectedRoute";
 import SharedProductLayout from './pages/SharedProductLayout';
 import Service from "./pages/Service";
 
@@ -39,22 +39,22 @@ function App() {
             <Route path=":productId" element={<SingleProduct/>} />
           </Route>
 
-          {/* <Route path='login' element={<Login setUser={setUser}></Login>}/> */}
+          <Route path='login' element={<Login setUser={setUser}></Login>}/>
 
-          {/* <Route 
+          <Route 
             path='dashboard'
             element={
               <ProtectedRoute user={user}>
                 <DashBoard user={user}/>
               </ProtectedRoute>}
-          /> */}
+          />
 
           <Route path="*" element={<Error/>}/>
         </Route>
 
-        {/* <Route path="dashboard" element={<div>dashboard</div>}>
+        <Route path="dashboard" element={<div>dashboard</div>}>
           <Route path="stats" element={<div>stats</div>} />
-        </Route> */}
+        </Route>
 
       </Routes>
 

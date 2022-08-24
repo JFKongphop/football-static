@@ -6,12 +6,8 @@ const SharedLayout = () =>{
     return (
         <>
             {/* show nav bar  */}
-            <nav className="console-nav">
-                <h1>Football static</h1>
-                <StyledNavbar/>
-            </nav>
+            <StyledNavbar/>
             
-
             {/* show all data in all page */}
             <Outlet />
         </>

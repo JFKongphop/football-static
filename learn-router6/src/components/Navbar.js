@@ -5,7 +5,6 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             {/* use this for move to the Add.js of the main path */}
-            erferrf
             <Link to='/'>Home</Link>
             <Link to='About' >About</Link>
             <Link to='Products' >Products</Link>
